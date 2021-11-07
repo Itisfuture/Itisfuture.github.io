@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mein Portfolio</title>
+    </head>
+    <script>
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+           
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+        
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+    <style> 
+                *{
+margin:0; padding:0; boxsizing:border-box;
+}
+         input[type="button"]
+         {
+         background-color: dimgray;
+         color: black;
+         border: solid black 2px;
+         width:100%
+         }
+  
+         input[type="text"]
+         {
+         background-color:white;
+         border: solid black 2px;
+         width:100%
+         }
+        
+        .title-calculator{
+            font-family: sans-serif;
+            color: #363534;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        body{
+            background-color: darkgrey
+        }
+        
+        p{
+            font-size: 24;
+            font-family: sans-serif;
+        }
+        
+        h3 {
+            font-family: sans-serif;
+            color: dimgrey;
+            margin-bottom: auto;
+        }
+        
+        h1 {
+            font-family: sans-serif;
+            color: dimgrey;        
+        }
+
+nav{
+width: 100%; height: 75px;
+background: gray;
+display: flex; justify-content: space-between;
+align-items: center;
+        }
+
+nav .mainmenu{
+width: 40%;
+display: flex; justify-content: space-around;
+        }
+
+        
+main{
+width: 100%; height: 85vh;
+display: flex; justify-content: center;
+align-items: center;
+text-align: center;
+        }
+        
+        img {
+            float: right;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display:flex;
+        }
+        
+        .seperator {
+            border: 5px solid gray;
+            width: inherit;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        
+        .seperator end img {
+            border: 5px solid gray;
+            width: inherit;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+             LINK HIER DU GLÜNG{
+            align-content: flex-start;
+            font-family: sans-serif;
+            color: dimgray;
+            font-size: 32px;
+        }
+        
+        .experience {
+            border: 5px solid gray;
+            width: 200px;
+            height: 100px;
+            margin-right: 20px;
+            margin-left: 45px;
+        }
+        
+        p{
+            font-family: sans-serif;
+            color: #363534;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: gray;
+            color: blanchedalmond;
+        }
+        
+        #container.end {
+            overflow: auto;
+        }
+        
+        #c2 {
+            background:none;
+            float:right;
+            border: solid none;
+            width: 500px;
+            height: 500px;
+            overflow: auto;
+            display: flex;
+        }
+        
+        #c2 Images {
+            margin-left: 5px;
+            margin-right: 5px;
+            overflow: auto;
+            display: flex;
+        }
+        
+        li {
+            font-family: sans-serif;
+            color: dimgrey;
+            margin-bottom: auto;
+            font-size: 19px;
+        }
+
+        
+    </style>
+<body>
+
+    <header>
+        <nav>
+            <div class = "logo"><img src="https://image.flaticon.com/icons/png/512/34/34579.png" style="width: 70px"></div>
+            <div class = "mainmenu"><h1 style="color: black">Portfolio Rayan Lee Bopp</h1></div>
+        </nav>
+    </header>
+     <img src="Bewerbungsfoto%20Rayan%20Bopp%203-min.jpeg" style="width: 500px" style="height: inherit">
+    <h1>About Me</h1>
+    <h3> Ich heisse Rayan.</h3>
+    <h3> Ich bin 15 Jahre alt und gehe in das 10. Schuljahr. Ich bin schon seit mehreren Jahren fasziniert mit dem Programmieren jedoch konnte ich dies nie ganz ausleben, da ich mir es immer selbst beibringen musste sowie ich HTML mir selbst beigebracht habe. gegeben wenn man in den Source code schaut kann sieht man zwar das die Website sehr einfach aufgebaut ist, aber immer hin.</h3>
+    <div class="seperator"></div>
+    <div class = title-calculator ><h1>Meine Vorherigen Projekte</h1></div>
+      <table border="1">
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+         </tr>
+    </table>
+    <div class="seperator"></div>
+    <h1 style="margin-bottom: 20px"> Meine Berufserfahrng</h1>
+    <div class="container">
+    <div class="experience"><p>Spital Zollikerberg</p><br><p>Informatiker</p><br><p> 1 Tag</p></div>
+    <div class="experience"><p>Spital Männedorf</p><br><p>Informatiker</p><br><p>2 Tage</p></div>
+    </div>
+    <div class="seperator"></div>
+    <h1> Meine Fähigkeiten</h1>
+    <h3> Wie Sie wahrscheinlich sehen können kann ich mit HTML und CSS programmieren, zusätzlich verfüge ich über ein breites Wissen in der Computertechnik. Ich habe nebst meinen Technischenskills auch noch kommunikationsskills, die ich mir in meiner Schulzeit an der Oberstufe angeignet habe.</h3>
+    <div class="seperator end img"></div>
+    <div id="contaner.end">
+    <div id="c2">
+        <div id="c2 Images"><img src="93479066_10216817989821905_6072269447924547584_n.jpg" style="width: 250px" style="height: 250px"></div>
+        <div id="c2 Images"><img src="93564675_10216817994262016_1236024307126108160_n.jpg" style="width: 250px" style="height: 250px"></div>
+    </div>
+    <h1>Meine Hobbys</h1>         
+</div>
+    <h3>Ich habe mehrere Hobbys, aber wenn ich von meinem Hobby spreche rede ich eher von Zuhause vor dem PC sitzen, da ich gerne videos aufnehme/schneide, Programmiere, Game und meinen PC ausseinander nehmen. </h3>
+    <h3>Letztes Jahr habe ich meinem Bruder einen Gaming PC zusammengestellt.</h3>
+    <h3> Spezifikationen</h3>
+    <li> CPU : AMD RYZEN 7 2700 X</li>
+    <li> GPU : KFA2 RTX 2060 Ghost OC</li>
+    <li> PSU : Thermaltake RGB</li>
+    <li> RAM : Corsair Vengance 32GB</li>
+    <li> M2. SSD: Samsung EVO 970 EVO Plus</li>
+    <br>
+    <div class="seperator end img"></div>
+</body>
+</html>
